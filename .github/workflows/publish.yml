@@ -25,19 +25,16 @@ jobs:
         with:
           cache-read-only: true
       - name: Setup publish token
-        env:
-          JETBRAINS_TOKEN: ${{ secrets.JETBRAINS_TOKEN }}
         shell: bash
         run: |
           mkdir -p ~/.gradle/
           echo "GRADLE_USER_HOME=$HOME/.gradle" >> "$GITHUB_ENV"
-          echo "mcdev.deploy.token=${JETBRAINS_TOKEN}" > ~/.gradle/gradle.properties
       - shell: bash
         run: |
           mkdir -p ~/.gradle/
           echo -e '\norg.gradle.jvmargs=-Xmx4G\n' >> ~/.gradle/gradle.properties
       - name: Publish plugin
-        run: ./gradlew clean :publishPlugin --stacktrace
+        run: ./gradlew clean :assemble :buildPlugin --stacktrace
       - name: Get tag name
         id: get_tag
         shell: bash
