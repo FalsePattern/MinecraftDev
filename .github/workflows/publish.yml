@@ -51,7 +51,7 @@ jobs:
         with:
           tag_name: ${{ steps.get_tag.outputs.tag }}
           name: 'Release ${{ steps.get_tag.outputs.release }}'
-          body: '## [View all plugin releases here.](https://plugins.jetbrains.com/plugin/8327-minecraft-development/versions/stable/)'
+          body: 'RFG-enabled fork'
           prerelease: false
           draft: false
           files: build/distributions/*.zip
