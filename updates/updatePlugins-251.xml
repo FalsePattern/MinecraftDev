@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-  <plugin id='com.demonwav.minecraft-dev' url='https://github.com/eigenraven/MinecraftDev/releases/download/RFG-1.8.3-2025.1/Minecraft.Development-2025.1-1.8.3-rfg.zip' version='2025.1-1.8.3-rfg'>
+  <plugin id='com.demonwav.minecraft-dev' url='https://github.com/FalsePattern/MinecraftDev/releases/download/1.8.4-2025.1-rfg-fp/Minecraft.Development-2025.1-1.8.4-rfg-fp.zip' version='2025.1-1.8.4-rfg-fp'>
     <idea-version since-build='251.17181.16' until-build='251.*' />
     <name>Minecraft Development (RFG-Enabled)</name>
     <description><![CDATA[
